@@ -1,0 +1,65 @@
+BODY {
+	BACKGROUND-COLOR: #ffffff; FONT: 70%/2em Verdana, sans-serif
+}
+P.right {
+	PADDING-RIGHT: 5em; FLOAT: right
+}
+P.left {
+	PADDING-LEFT: 5em; FLOAT: left
+}
+#header {
+	POSITION: absolute;
+	BACKGROUND-COLOR: #ffffff;
+	WIDTH: 100%;
+	HEIGHT: 100px;
+	left: 0px;
+	top: 0px;
+}
+#header IMG {
+	POSITION: absolute; TOP: 11px; RIGHT: 5%
+}
+#footer {
+	POSITION: absolute;
+	BACKGROUND-COLOR: #ffffff;
+	WIDTH: 100%;
+	BOTTOM: 0px;
+	HEIGHT: 61px;
+	left: 0px;
+}
+#main {
+	POSITION: absolute;
+	WIDTH: 100%;
+	HEIGHT: 100%;
+	TOP: 0px;
+	LEFT: 0px;
+	background-color: #000000;
+}
+#naslov {
+	POSITION: absolute;
+	WIDTH: 780px;
+	BACKGROUND: url(img/vsa_long.png) no-repeat;
+	HEIGHT: 40px;
+	TOP: 138px;
+	RIGHT: 47px
+}
+#intro {
+	POSITION: relative; WIDTH: 33%; FLOAT: right; TOP: 200px; MARGIN-RIGHT: 5%
+}
+#intro P {
+	TEXT-ALIGN: justify; COLOR: #cccccc
+}
+#buttons {
+	POSITION: relative; WIDTH: 550px; HEIGHT: 250px; MARGIN-LEFT: 2em; TOP: 250px; LEFT: 0px
+}
+#buttons UL {
+	LIST-STYLE-POSITION: inside; Z-INDEX: 4; POSITION: relative; LIST-STYLE-TYPE: none; MARGIN: 0px; WIDTH: 550px
+}
+#buttons UL LI {
+	MARGIN: 0px 10px 10px 0px; WIDTH: 110px; FLOAT: left; HEIGHT: 110px
+}
+#buttons UL LI A {
+	TEXT-ALIGN: center; MARGIN: 10px 0px 0px 10px; WIDTH: 100px; FLOAT: left; HEIGHT: 100px; COLOR: #b5cce8; TEXT-DECORATION: none
+}
+#buttons UL LI A IMG {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+}
