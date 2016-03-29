@@ -1,89 +1,199 @@
+/* LAYOUT */
+
+html,
 body {
-	background-color: #ffffff;
-	font: 70%/2em verdana, sans-serif;
+    height:100%;
 }
-p.right {
-	padding-right: 5em;
-	float: right;
-}
-p.left {
-	padding-left: 5em;
-	float: left;
+body {
+    font: 14px/2em verdana, sans-serif;
 }
 #header {
-	position: absolute;
-	background-color: #ffffff;
-	width: 100%;
-	height: 100px;
-	left: 0;
-	top: 0;
+    text-align: right;
+    padding-top: 11px;
 }
-#header img {
-	position: absolute;
-	top: 11px;
-	right: 5%;
+.container-fluid {
+    max-width: 2000px;
 }
-#footer {
-	position: absolute;
-	background-color: #ffffff;
-	width: 100%;
-	bottom: 0;
-	height: 61px;
-	left: 0;
+.container-fluid.black {
+    background-color: #000000;
 }
-#main {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background-color: #000000;
+.container-fluid.white {
+    background-color: #ffffff;
 }
-#naslov {
-	position: absolute;
+.container-fluid > .row {
+    padding: 0 5% 0 2%;
+}
+.container-fluid > .row > div:first-child {
+    padding-left: 0;
+}
+.container-fluid > .row > div:last-child {
+    padding-right: 0;
+}
+.container-fluid > .row {
+    color: #ffffff;
+    background-color: #000000;
+}
+.container-fluid > .row.white {
+    color: #000000;
+    background-color: #ffffff;
+}
+.container-fluid.main {
+    min-height: 100%;
+    padding-bottom: 70px;
+}
+.container-fluid.footer {
+    position: relative;
+    margin-top: -50px; /* negative value of footer height */
+    min-height: 50px;
+    clear:both;
+    padding-top: 0;
+    padding-bottom: 0;
+    color:#fff;
+    font-size: 80%;
+}
+.container-fluid.footer > .row {
+    min-height: 50px;
+    color: #cccccc;
+}
+@media (max-width: 768px) {
+    .container-fluid > .row > * {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+/* TEXT */
+
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+em.blue {
+    color: #1e57ab;
+    font-style: normal;
+}
+.clear {
+    clear: both;
+}
+.error {
+    color: #ff0000;
+}
+
+
+/* SIDEBAR MENU */
+
+ul.nav {
+    margin: 1em 0;
+    width: 140px;
+    list-style: none none;
+    padding: 0;
+}
+ul.nav li {
+    background: #000000;
+    margin: 0;
+    padding: 0;
+    border-bottom: #ffffff 1px solid;
+    display: block;
+}
+ul.nav a {
+    padding: 0 15px;
+    line-height: 2.5;
+    display: block;
+    color: #cccccc;
+    text-decoration: none;
+}
+ul.nav .active a {
+    background: #666666;
+}
+ul.nav .active a {
+    color: #000000;
+    font-weight: bold;
+}
+ul.nav li:hover a {
+    background-color: #cccccc;
+}
+ul.nav li:hover a {
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    /* mobile-LAST */
+
+    .row > .menu.col-xs-12 {
+        padding-right: 0;
+    }
+
+    .menu ul.nav {
+        width: 100%;
+        background: #fff;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu ul.nav li {
+        flex-grow: 1;
+        flex-basis: 20%;
+        min-width: 130px;
+        background: #000;
+        margin-right: 2px;
+    }
+}
+
+ul.nav.two-col {
+    width: 100%
+}
+ul.nav.two-col li {
+    width: 50%;
+    --webkit-box-sizing: border-box;
+    --moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul.nav.two-col.clearfix li {
+    float: left;
+    border-right: 2px solid #ffffff;
+}
+
+@media (max-width: 768px) {
+    /* mobile-LAST */
+
+    ul.nav.two-col li {
+        width: 100%;
+    }
+}
+
+
+/* CONTENT */
+
+.visnjan_banner {
+    background-image: url('banner.jpg');
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+h1 {
 	font-family: "nasamedium", Arial, sans-serif;
-	top: 138px;
-	right: 5%;
-	left: 2%;
 	font-size: 58px;
 	text-shadow: 0 0 6px #FFF;
 	line-height: 58px;
-	text-align: right;
 	font-weight: normal;
-}
-#intro {
-	position: relative;
-	width: 33%;
-	float: right;
-	top: 200px;
-	margin-right: 5%;
+    text-transform: uppercase;
 }
 #intro p {
 	text-align: justify;
 	color: #cccccc;
 }
-#buttons {
-	position: relative;
-	width: 550px;
-	height: 250px;
-	margin-left: 2em;
-	top: 250px;
-	left: 0;
+.buttons {
+    margin-bottom: 3em;
 }
-#buttons ul {
-	z-index: 4;
-	position: relative;
-	list-style: none inside;
-	margin: 0;
-	width: 550px;
-}
-#buttons ul li {
+.buttons ul li {
+    list-style: none;
 	margin: 0 10px 10px 0;
 	width: 110px;
 	float: left;
 	height: 110px;
 }
-#buttons ul li a {
+.buttons ul li a {
     line-height: 1.2em;
 	text-align: center;
 	margin: 10px 0 0 10px;
@@ -93,6 +203,121 @@ p.left {
 	color: #b5cce8;
 	text-decoration: none;
 }
-#buttons ul li a img {
+.buttons ul li a img {
 	border-width: 0;
+}
+
+.captioned_photo {
+    position: relative;
+    line-height: 1em;
+    margin: 0.5em 0 1.5em 1.25em;
+    float: right;
+    padding: 0;
+}
+.captioned_photo p {
+    position: absolute;
+    background-color: #111111;
+    margin: 0 0 0 25px;
+    width: 210px;
+    bottom: -20px;
+    display: block;
+    font: 0.75em/1.25em verdana, sans-serif;
+    color: #ffffff;
+    padding: 0;
+    left: 0;
+}
+.captioned_photo span {
+    display: block;
+    color: #ffffff;
+    padding: 0.75em;
+}
+.captioned_photo img {
+    margin: 0;
+    display: block;
+    padding: 0;
+}
+.captioned_photo a {
+    color: #000000;
+}
+
+@media (max-width: 768px) {
+    /* mobile-LAST */
+    .captioned_photo {
+        float: none;
+        display: block;
+        width: 240px;
+        margin: 1em auto 3em auto;
+    }
+}
+
+body .main .past_vsa_links {
+    width: 50%;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    /* mobile-LAST */
+    body .main .past_vsa_links {
+        width: 80%;
+    }
+}
+
+/* FORMS */
+
+input, button, select, textarea {
+    line-height: 1.2em;
+}
+fieldset {
+    position: relative;
+    border-bottom-style: none;
+    border-right-style: none;
+    background-color: #dcdad5;
+    margin: 0 0 -1em;
+    width: 100%;
+    float: left;
+    clear: both;
+    border-left-style: none;
+    border-top: #bfbab0 1px solid;
+    padding: 0 0 1em;
+}
+fieldset.alt {
+    background-color: #f2efe9;
+}
+legend {
+    font-weight: bold;
+    padding: 0;
+}
+legend span {
+    position: absolute;
+    margin-top: 0.5em;
+    font-size: 115%;
+    top: 0;
+    left: 0.74em;
+}
+label {
+    width: 25em;
+    float: left;
+    margin-right: 1em;
+}
+label.blize {
+    width: 25em;
+}
+fieldset ol {
+    list-style: none none;
+    padding: 2em 1em 0;
+}
+fieldset li {
+    padding-bottom: 1em;
+    width: auto;
+    float: left;
+    clear: left;
+}
+fieldset.submit {
+    background-color: #ffffff;
+    padding-left: 12em;
+    width: auto;
+    float: none;
+    padding-top: 1.5em;
+}
+fieldset.alt {
+    background-color: #e6e3dd;
 }

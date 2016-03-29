@@ -2,188 +2,181 @@
 <html>
 <head>
     <title>VSA 2016 | Application</title>
-    <meta content="How to apply for Visnjan School of Astronomy" name="Description">
-    <meta content="school astronomy application" name="Keywords">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <link href="vsa_form.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-        <!--
-        .style1 {
-        font-size: 45px;
-        font-family: "Monotype Corsiva", times, serif;
-        }
-        .style2 {color: #FF0000}
-        .style4 {
-        color: #000000;
-        font-weight: bold;
-        }
-        -->
-    </style>
+    <meta content="Program of Visnjan School of Astronomy" name="Description">
+    <meta content="school astronomy program" name="Keywords">
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="vsa_main.css" rel="stylesheet" type="text/css">
+    <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css">
 </head>
-<body id="body_app">
-    <div id="wrapper">
-        <div id="header">
-            <img alt="VSA" class="slika" src="banner.jpg">
-            <div id="wrp"><img alt="VSA" class="tekst" src="vsa_white.png"></div>
+<body>
+    <div class="container-fluid main white">
+        <div class="row visnjan_banner">
+            <div class="col-xs-12" id="header">
+                <img alt="VSA" src="vsa_white.png">
+            </div>
         </div>
-        <div id="nav">
-            <div id="navig">
-                <ul id="nav">
+        <div class="row white">
+            <div class="menu col-xs-12 col-sm-3 col-md-2">
+                <ul class="nav">
                     <li id="nav_hom">
-                        <a href="http://www.astro.hr/vsa2016/index.html">Home</a>
+                        <a href=".">Home</a>
                     </li>
                     <li id="nav_prog">
-                        <a href="http://www.astro.hr/vsa2016/program.htm">Program</a>
+                        <a href="program.htm">Program</a>
                     </li>
                     <li id="nav_proj">
-                        <a href="http://www.astro.hr/vsa2016/projects.htm">Projects</a>
+                        <a href="projects.htm">Projects</a>
                     </li>
                     <li id="nav_lec">
-                        <a href="http://www.astro.hr/vsa2016/lectures.htm">Lectures</a>
+                        <a href="lectures.htm">Lectures</a>
                     </li>
-                    <li id="nav_app">
-                        <a href="http://www.astro.hr/vsa2016/application.htm">Application</a>
+                    <li id="nav_app" class="active">
+                        <a href="application.htm">Application</a>
                     </li>
                     <li id="nav_spo">
-                        <a href="http://www.astro.hr/vsa2016/sponsors.htm">Sponsors</a>
+                        <a href="sponsors.htm">Sponsors</a>
                     </li>
                     <li id="nav_pre">
-                        <a href="http://www.astro.hr/vsa2016/previous.htm">Previous</a>
+                        <a href="previous.htm">Previous</a>
                     </li>
                     <li id="nav_con">
-                        <a href="http://www.astro.hr/vsa2016/contact.htm">Contact</a>
+                        <a href="contact.htm">Contact</a>
                     </li>
                 </ul>
             </div>
-        </div>
-        <div id="main">
-            <div class="style1" id="naslov">
-                APPLICATION
+            <div id="" class="col-xs-12 col-sm-9 col-md-10">
+                <h1>Application</h1>
+                <div class="captioned_photo">
+                    <img alt="Application form" height="200" src="application_big.jpg" width="200">
+                    <p><span>Applying for VSA is easy, just sign down there ...</span></p>
+                </div>
+                <p>Application to the VSA is done in two steps:</p>
+                <ol>
+                    <li>filling in the application form</li>
+                    <li>providing recommendation letter from one of your teachers</li>
+                </ol>
+                <p><br>
+                <strong><span class="style2">Deadline: 01.06.2016., 23:59 UT</span></strong></p>
+                <h2>Application form</h2>
+                <form action="http://www.cficroatia.hr/vsa/send.php" method="post">
+                    <fieldset>
+                        <legend><span>Personal information</span></legend>
+                        <ol>
+                            <li><label class="blize" for="name">Name and Surname:</label> <input class="text" id="name" name="name" type="text"></li>
+                            <li><label class="blize" for="sex">Sex:</label> <select name="sex">
+                                <option value="male">
+                                    Male
+                                </option>
+                                <option selected value="female">
+                                    Female
+                                </option>
+                            </select></li>
+                            <li><label class="blize" for="birth">Date of birth:</label> <input class="text" id="birth" name="birth" type="text"></li>
+                            <li><label class="blize" for="birthplace">Birthplace:</label> <input class="text" id="birthplace" name="birthplace" type="text"></li>
+                            <li><label class="blize" for="address">Home address:</label> <input class="text" id="address" name="address" type="text"></li>
+                            <li><label class="blize" for="putovnica">Your Identity Card number or Passport No.:</label> <big><input class="text" id="putovnica" name="putovnica" type="text"></big></li>
+                            <li><label class="blize" for="email">Email:</label> <input class="text" id="email" name="email" type="text"></li>
+                            <li><label class="blize" for="phone">Telephone:</label> <input class="text" id="phone" name="phone" type="text"></li>
+                            <li><label class="blize" for="school">School:</label> <input class="text" id="school" name="school" type="text"></li>
+                            <li><label class="blize" for="grade">Finished grade:</label> <input class="text" id="grade" name="grade" type="text"></li>
+                        </ol>
+                    </fieldset>
+                    <fieldset class="alt">
+                        <legend><span>Interests and achievements</span></legend>
+                        <ol>
+                            <li><label for="activity">Attended school activities:</label> <input class="text" id="activity" name="activity" type="text"></li>
+                            <li><label for="mag">Scientific magazines you read:</label> <input class="text" id="mag" name="mag" type="text"></li>
+                            <li><label for="astro">Astronomy fields of interest:</label> <input class="text" id="astro" name="astro" type="text"></li>
+                            <li><label for="prog">Can you code programs?</label> <select name="prog">
+                                <option value="no">
+                                    No
+                                </option>
+                                <option selected value="yes">
+                                    Yes
+                                </option>
+                            </select></li>
+                            <li><label for="prog2">If yes, in which programming languages:</label> <input class="text" id="prog2" name="prog2" type="text"></li>
+                            <li><label for="lang">Languages you speak:</label> <input class="text" id="lang" name="lang" type="text"></li>
+                            <li><label for="con">Have you participated in contests?</label> <select name="con">
+                                <option value="no">
+                                    No
+                                </option>
+                                <option selected value="yes">
+                                    Yes
+                                </option>
+                            </select></li>
+                            <li><label for="con2">If yes, which ones:</label> <input class="text" id="con2" name="con2" type="text"></li>
+                            <li><label for="ss">Have you attended similar programs?</label> <select name="ss">
+                                <option value="no">
+                                    No
+                                </option>
+                                <option selected value="yes">
+                                    Yes
+                                </option>
+                            </select></li>
+                            <li><label for="ss2">If yes, which ones:</label> <input class="text" id="ss2" name="ss2" type="text"></li>
+                        </ol>
+                    </fieldset>
+                    <fieldset>
+                        <legend><span>Technical information</span></legend>
+                        <ol>
+                            <li><label for="heard">How did you hear for VSA?</label> <select name="heard">
+                                <option selected value="pzm">
+                                    On National astronomy contest
+                                </option>
+                                <option value="web">
+                                    On Visnjan Observatory web
+                                </option>
+                                <option value="teacher">
+                                    From a teacher
+                                </option>
+                                <option value="friend">
+                                    From a friend
+                                </option>
+                                <option value="other">
+                                    Other (write how)
+                                </option>
+                            </select> <input class="text" id="other2" name="other2" type="text"></li>
+                            <li><label for="pay">The participation fee would be <span class="style4">1600 kunas (~210 Euro).</span> Can you find a sponsor (after the submission of the invitation letter) which could pay your total expenses of 3200 Kn (~420 Euro)?</label> <select name="pay">
+                                <option selected value="yes">
+                                    Yes
+                                </option>
+                                <option value="no">
+                                    No
+                                </option>
+                            </select></li>
+                            <li><label for="letter">How will the recommendation letter arrive?</label> <select name="letter">
+                                <option value="snail">
+                                    Snail mail
+                                </option>
+                                <option selected value="email">
+                                    Email
+                                </option>
+                            </select></li>
+                        </ol>
+                    </fieldset>
+                    <fieldset class="alt">
+                        <legend><span>Motivation letter</span></legend>
+                        <ol>
+                            <li><label for="mletter">Describe what your interests are in general, what you would like to learn and what you expect from VSA.</label>
+                            <textarea cols="50" name="mletter" rows="15"></textarea></li>
+                        </ol>
+                    </fieldset>
+                    <fieldset class="submit">
+                        <input class="submit" type="submit" value="Send">
+                    </fieldset>
+                </form>
+                <p>&nbsp;</p>
             </div>
-            <div class="captioned_photo">
-                <img alt="Application form" height="200" src="application_big.jpg" width="200">
-                <p><span>Applying for VSA is easy, just sign down there ...</span></p>
-            </div>
-            <p>Application to the VSA is done in two steps:</p>
-            <ol>
-                <li>filling in the application form</li>
-                <li>providing recommendation letter from one of your teachers</li>
-            </ol>
-            <p><br>
-            <strong><span class="style2">Deadline: 01.06.2016., 23:59 UT</span></strong></p>
-            <h2>Application form</h2>
-            <form action="http://www.cficroatia.hr/vsa/send.php" method="post">
-                <fieldset>
-                    <legend><span>Personal information</span></legend>
-                    <ol>
-                        <li><label class="blize" for="name">Name and Surname:</label> <input class="text" id="name" name="name" type="text"></li>
-                        <li><label class="blize" for="sex">Sex:</label> <select name="sex">
-                            <option value="male">
-                                Male
-                            </option>
-                            <option selected value="female">
-                                Female
-                            </option>
-                        </select></li>
-                        <li><label class="blize" for="birth">Date of birth:</label> <input class="text" id="birth" name="birth" type="text"></li>
-                        <li><label class="blize" for="birthplace">Birthplace:</label> <input class="text" id="birthplace" name="birthplace" type="text"></li>
-                        <li><label class="blize" for="address">Home address:</label> <input class="text" id="address" name="address" type="text"></li>
-                        <li><label class="blize" for="putovnica">Your Identity Card number or Passport No.:</label> <big><input class="text" id="putovnica" name="putovnica" type="text"></big></li>
-                        <li><label class="blize" for="email">Email:</label> <input class="text" id="email" name="email" type="text"></li>
-                        <li><label class="blize" for="phone">Telephone:</label> <input class="text" id="phone" name="phone" type="text"></li>
-                        <li><label class="blize" for="school">School:</label> <input class="text" id="school" name="school" type="text"></li>
-                        <li><label class="blize" for="grade">Finished grade:</label> <input class="text" id="grade" name="grade" type="text"></li>
-                    </ol>
-                </fieldset>
-                <fieldset class="alt">
-                    <legend><span>Interests and achievements</span></legend>
-                    <ol>
-                        <li><label for="activity">Attended school activities:</label> <input class="text" id="activity" name="activity" type="text"></li>
-                        <li><label for="mag">Scientific magazines you read:</label> <input class="text" id="mag" name="mag" type="text"></li>
-                        <li><label for="astro">Astronomy fields of interest:</label> <input class="text" id="astro" name="astro" type="text"></li>
-                        <li><label for="prog">Can you code programs?</label> <select name="prog">
-                            <option value="no">
-                                No
-                            </option>
-                            <option selected value="yes">
-                                Yes
-                            </option>
-                        </select></li>
-                        <li><label for="prog2">If yes, in which programming languages:</label> <input class="text" id="prog2" name="prog2" type="text"></li>
-                        <li><label for="lang">Languages you speak:</label> <input class="text" id="lang" name="lang" type="text"></li>
-                        <li><label for="con">Have you participated in contests?</label> <select name="con">
-                            <option value="no">
-                                No
-                            </option>
-                            <option selected value="yes">
-                                Yes
-                            </option>
-                        </select></li>
-                        <li><label for="con2">If yes, which ones:</label> <input class="text" id="con2" name="con2" type="text"></li>
-                        <li><label for="ss">Have you attended similar programs?</label> <select name="ss">
-                            <option value="no">
-                                No
-                            </option>
-                            <option selected value="yes">
-                                Yes
-                            </option>
-                        </select></li>
-                        <li><label for="ss2">If yes, which ones:</label> <input class="text" id="ss2" name="ss2" type="text"></li>
-                    </ol>
-                </fieldset>
-                <fieldset>
-                    <legend><span>Technical information</span></legend>
-                    <ol>
-                        <li><label for="heard">How did you hear for VSA?</label> <select name="heard">
-                            <option selected value="pzm">
-                                On National astronomy contest
-                            </option>
-                            <option value="web">
-                                On Visnjan Observatory web
-                            </option>
-                            <option value="teacher">
-                                From a teacher
-                            </option>
-                            <option value="friend">
-                                From a friend
-                            </option>
-                            <option value="other">
-                                Other (write how)
-                            </option>
-                        </select> <input class="text" id="other2" name="other2" type="text"></li>
-                        <li><label for="pay">The participation fee would be <span class="style4">1600 kunas (~210 Euro).</span> Can you find a sponsor (after the submission of the invitation letter) which could pay your total expenses of 3200 Kn (~420 Euro)?</label> <select name="pay">
-                            <option selected value="yes">
-                                Yes
-                            </option>
-                            <option value="no">
-                                No
-                            </option>
-                        </select></li>
-                        <li><label for="letter">How will the recommendation letter arrive?</label> <select name="letter">
-                            <option value="snail">
-                                Snail mail
-                            </option>
-                            <option selected value="email">
-                                Email
-                            </option>
-                        </select></li>
-                    </ol>
-                </fieldset>
-                <fieldset class="alt">
-                    <legend><span>Motivation letter</span></legend>
-                    <ol>
-                        <li><label for="mletter">Describe what your interests are in general, what you would like to learn and what you expect from VSA.</label>
-                        <textarea cols="50" name="mletter" rows="15"></textarea></li>
-                    </ol>
-                </fieldset>
-                <fieldset class="submit">
-                    <input class="submit" type="submit" value="Send">
-                </fieldset>
-            </form>
         </div>
-        <div id="footer">
-            <p class="left">Visnjan Observatory, Istarska 5, 52463 Visnjan, Croatia</p>
-            <p class="right">April, 2016</p>
+    </div>
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-xs-12" id="footer">
+                <p class="pull-left">Visnjan Observatory, Istarska 5, 52463 Visnjan, Croatia</p>
+                <p class="pull-right">April, 2016</p>
+            </div>
         </div>
     </div>
 </body>

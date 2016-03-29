@@ -2,141 +2,134 @@
 <html>
 <head>
     <title>VSA 2016 | Projects</title>
-    <meta content="Projects on Visnjan School of Astronomy" name="Description">
-    <meta content="school astronomy projects" name="Keywords">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <link href="vsa_projects.css" rel="stylesheet" type="text/css">
-    <meta content="MSHTML 8.00.6001.18928" name="GENERATOR">
-    <style type="text/css">
-        <!--
-        body {
-        background-image: url();
-        }
-        .style1 {
-        font-size: 45px;
-        font-family: "Monotype Corsiva", times, serif;
-        }
-        -->
-    </style>
+    <meta content="Program of Visnjan School of Astronomy" name="Description">
+    <meta content="school astronomy program" name="Keywords">
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="vsa_main.css" rel="stylesheet" type="text/css">
+    <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css">
 </head>
-<body id="body_proj">
-    <div id="wrapper">
-        <div id="header">
-            <img alt="VSA" class="slika" src="banner.jpg">
-            <div id="wrp"><img alt="VSA" class="tekst" src="vsa_white.png"></div>
+<body>
+    <div class="container-fluid main white">
+        <div class="row visnjan_banner">
+            <div class="col-xs-12" id="header">
+                <img alt="VSA" src="vsa_white.png">
+            </div>
         </div>
-        <div id="nav">
-            <div id="navig">
-                <ul id="nav">
+        <div class="row white">
+            <div class="menu col-xs-12 col-sm-3 col-md-2">
+                <ul class="nav">
                     <li id="nav_hom">
-                        <a href="http://www.astro.hr/vsa2016/index.html">Home</a>
+                        <a href=".">Home</a>
                     </li>
                     <li id="nav_prog">
-                        <a href="http://www.astro.hr/vsa2016/program.htm">Program</a>
+                        <a href="program.htm">Program</a>
                     </li>
-                    <li id="nav_proj">
-                        <a href="http://www.astro.hr/vsa2016/projects.htm">Projects</a>
+                    <li id="nav_proj" class="active">
+                        <a href="projects.htm">Projects</a>
                     </li>
                     <li id="nav_lec">
-                        <a href="http://www.astro.hr/vsa2016/lectures.htm">Lectures</a>
+                        <a href="lectures.htm">Lectures</a>
                     </li>
                     <li id="nav_app">
-                        <a href="http://www.astro.hr/vsa2016/application.htm">Application</a>
+                        <a href="application.htm">Application</a>
                     </li>
                     <li id="nav_spo">
-                        <a href="http://www.astro.hr/vsa2016/sponsors.htm">Sponsors</a>
+                        <a href="sponsors.htm">Sponsors</a>
                     </li>
                     <li id="nav_pre">
-                        <a href="http://www.astro.hr/vsa2016/previous.htm">Previous</a>
+                        <a href="previous.htm">Previous</a>
                     </li>
                     <li id="nav_con">
-                        <a href="http://www.astro.hr/vsa2016/contact.htm">Contact</a>
+                        <a href="contact.htm">Contact</a>
                     </li>
                 </ul>
             </div>
-        </div>
-        <div id="main">
-            <div class="style1" id="naslov">
-                PROJECTS
+            <div id="" class="col-xs-12 col-sm-9 col-md-10">
+                <h1>Projects</h1>
+                <div class="captioned_photo">
+                    <img alt="Telescope for observations" height="200" src="projects_big.jpg" width="200">
+                    <p><span>Hands-on experience in astronomy through practical projects.</span></p>
+                </div>
+                <p>
+                  This year there will be several projects in different fields of
+                  astronomy / astrophysics / technology. Teams are going to be
+                  assembled according to students' fields of interest. The current
+                  list of our team leaders with their projects is available here:
+                  <br>
+                  <br>
+                </p>
+                <ul>
+                    <li>
+                        <strong>Suzana Galovi&#263;: Astronomical spectroscopy</strong>
+                        <br>
+                        <br>
+                    </li>
+                    <li>
+                        <strong>Boris &Scaron;tromar: Astrophotography</strong>
+                        <br>
+                        <br>
+                    </li>
+                    <li>
+                        <strong>Denis Vida: Croatian Meteor Network - data analysis</strong>
+                        <br>
+                        Abstract: Croatian Meteor Network (CMN) is currently monitoring
+                        the night sky over Croatia and near surroundings with 30 paired
+                        cameras that enable precise trangulation of detected meteors and
+                        their orbit determination. There has been an ongoing effort of
+                        CMN to produce an automated, scientifically meaningufull,
+                        photometric analysis of detected meteors as well. Recently, it
+                        has been observed that light-curves of detected meteors display
+                        large amplitude and high frequency intensity variations as the
+                        meteor passes through it's brightest phase. These intense brightness
+                        variations could possibly be attributed to meteor's rotation.
+                        <br>
+                        It's the goal of this group to try and obtain light-curves of
+                        meteors detected by CMN, analyse their frequency spectrum and
+                        try to determine their rotation rates.
+                        <br>
+                        <br>
+                    </li>
+                    <li>
+                        <strong>Vasilije Perovic, Marta Niki&#263;:
+                            Geophysical observatory - ELF Observations of Ionosphere</strong>
+                        <br>
+                        <span>
+                            Abstract: The main instrument at Tican Geophysical Station is
+                            Schumann antenna which is used to observe Ionosphere at Extremely
+                            Low Frequencies and one of the main goals is detection of ELF EM
+                            waves during meteor showers. Theoretical models predict these signals
+                            but they have never been observed before. Observations were
+                            successfully started recently and the system was automated. In
+                            order to produce quantitative results, an absolute calibration of
+                            Schumann antenna is required. Trivial and simple methods fail at
+                            ELF since antenna length cannot be matched with the wavelength.
+                            The goal of this group is to design a system for calibration and
+                            perform the calibration on the Schumann antenna. Students will
+                            gain knowledge and experience in antenna design and RF electronics
+                            as well as data processing and analysis. Students will learn to use
+                            LabView and MATLAB to perform these. There is also ample scope to
+                            contribute to the development of the LabView code controlling the
+                            observations as well as further automation.
+                            <br>
+                            <br>
+                            <br>
+                        </span>
+                        <br>
+                        * Minor changes of groups and leaders are still possible and will be fully defined until the end of June.
+                    </li>
+                </ul>
+                <p>&nbsp;</p>
+                <p>&nbsp;</p>
             </div>
-            <div class="captioned_photo">
-                <img alt="Telescope for observations" height="200" src="projects_big.jpg" width="200">
-                <p><span>Hands-on experience in astronomy through practical projects.</span></p>
-            </div>
-            <p>
-              This year there will be several projects in different fields of
-              astronomy / astrophysics / technology. Teams are going to be
-              assembled according to students' fields of interest. The current
-              list of our team leaders with their projects is available here:
-              <br>
-              <br>
-            </p>
-            <ul>
-                <li>
-                    <strong>Suzana Galovi&#263;: Astronomical spectroscopy</strong>
-                    <br>
-                    <br>
-                </li>
-                <li>
-                    <strong>Boris &Scaron;tromar: Astrophotography</strong>
-                    <br>
-                    <br>
-                </li>
-                <li>
-                    <strong>Denis Vida: Croatian Meteor Network - data analysis</strong>
-                    <br>
-                    Abstract: Croatian Meteor Network (CMN) is currently monitoring
-                    the night sky over Croatia and near surroundings with 30 paired
-                    cameras that enable precise trangulation of detected meteors and
-                    their orbit determination. There has been an ongoing effort of
-                    CMN to produce an automated, scientifically meaningufull,
-                    photometric analysis of detected meteors as well. Recently, it
-                    has been observed that light-curves of detected meteors display
-                    large amplitude and high frequency intensity variations as the
-                    meteor passes through it's brightest phase. These intense brightness
-                    variations could possibly be attributed to meteor's rotation.
-                    <br>
-                    It's the goal of this group to try and obtain light-curves of
-                    meteors detected by CMN, analyse their frequency spectrum and
-                    try to determine their rotation rates.
-                    <br>
-                    <br>
-                </li>
-                <li>
-                    <strong>Vasilije Perovic, Marta Niki&#263;:
-                        Geophysical observatory - ELF Observations of Ionosphere</strong>
-                    <br>
-                    <span>
-                        Abstract: The main instrument at Tican Geophysical Station is
-                        Schumann antenna which is used to observe Ionosphere at Extremely
-                        Low Frequencies and one of the main goals is detection of ELF EM
-                        waves during meteor showers. Theoretical models predict these signals
-                        but they have never been observed before. Observations were
-                        successfully started recently and the system was automated. In
-                        order to produce quantitative results, an absolute calibration of
-                        Schumann antenna is required. Trivial and simple methods fail at
-                        ELF since antenna length cannot be matched with the wavelength.
-                        The goal of this group is to design a system for calibration and
-                        perform the calibration on the Schumann antenna. Students will
-                        gain knowledge and experience in antenna design and RF electronics
-                        as well as data processing and analysis. Students will learn to use
-                        LabView and MATLAB to perform these. There is also ample scope to
-                        contribute to the development of the LabView code controlling the
-                        observations as well as further automation.
-                        <br>
-                        <br>
-                        <br>
-                    </span>
-                    <br>
-                    * Minor changes of groups and leaders are still possible and will be fully defined until the end of June.
-                </li>
-            </ul>
-            <p>&nbsp;</p>
-            <p>&nbsp;</p>
         </div>
-        <div id="footer">
-            <p class="left">Visnjan Observatory, Istarska 5, 52463 Visnjan, Croatia</p>
-            <p class="right">April, 2016</p>
+    </div>
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-xs-12" id="footer">
+                <p class="pull-left">Visnjan Observatory, Istarska 5, 52463 Visnjan, Croatia</p>
+                <p class="pull-right">April, 2016</p>
+            </div>
         </div>
     </div>
 </body>
