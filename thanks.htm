@@ -2,28 +2,22 @@
 <html>
 <head>
     <title>VSA 2016 | Application</title>
-    <meta content="How to apply to Visnjan School of Astronomy 2008" name="Description">
-    <meta content="school astronomy application" name="Keywords">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <link href="vsa_thanks.css" rel="stylesheet" type="text/css">
-    <meta content="MSHTML 8.00.6001.18928" name="GENERATOR">
-    <style type="text/css">
-        <!--
-        .style1 {
-        font-size: 45px;
-        font-family: "Monotype Corsiva", times, serif;
-        }
-        -->
-    </style>
+    <meta content="Program of Visnjan School of Astronomy" name="Description">
+    <meta content="school astronomy program" name="Keywords">
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="vsa_main.css" rel="stylesheet" type="text/css">
+    <link href="fonts/stylesheet.css" rel="stylesheet" type="text/css">
 </head>
-<body id="body_app">
-    <div id="wrapper">
-        <div id="header">
-            <img alt="VSA" class="slika" src="banner.jpg">
-            <div id="wrp"><img alt="VSA" class="tekst" src="vsa_white.png"></div>
+<body>
+    <div class="container-fluid main white">
+        <div class="row visnjan_banner">
+            <div class="col-xs-12" id="header">
+                <img alt="VSA" src="vsa_white.png">
+            </div>
         </div>
-        <div id="nav">
-            <div id="navig">
+        <div class="row white">
+            <div class="menu col-xs-12 col-sm-3 col-md-2">
                 <ul class="nav">
                     <li id="nav_hom">
                         <a href=".">Home</a>
@@ -37,7 +31,7 @@
                     <li id="nav_lec">
                         <a href="lectures.htm">Lectures</a>
                     </li>
-                    <li id="nav_app">
+                    <li id="nav_app" class="active">
                         <a href="application.htm">Application</a>
                     </li>
                     <li id="nav_spo">
@@ -51,23 +45,27 @@
                     </li>
                 </ul>
             </div>
-        </div>
-        <div id="main">
-            <div class="style1" id="naslov">APPLICATION</div>
-          <div class="captioned_photo">
-                <img alt="Application form" height="200" src="application_big.jpg" width="200">
-                <p><span>Applying for VSA is easy, just sign down there ...</span></p>
+            <div id="" class="col-xs-12 col-sm-9 col-md-10">
+                <h1>Application</h1>
+                <div class="captioned_photo">
+                    <img alt="Application form" height="200" src="application_big.jpg" width="200">
+                    <p><span>Applying for VSA is easy, just sign down there ...</span></p>
+                </div>
+                <p>Your application has been sent. Thank you for applying!</p>
+                <p>
+                    Within 72 hours you should receive an e-mail confirming that we received your application.<br>
+                    In case you don&rsquo;t hear back from us, please contact us via our
+                    <a href="contact.htm" target="_blank">contact information.</a>
+                </p>
             </div>
-            <p>Your application has been sent. Thank you for applying!</p>
-            <p>
-                Within 72 hours you should receive an e-mail confirming that we received your application.<br>
-                In case you don&rsquo;t hear back from us, please contact us via our
-                <a href="contact.htm" target="_blank">contact information.</a>
-            </p>
         </div>
-        <div id="footer">
-            <p class="left">Visnjan Observatory, Istarska 5, 52463 Visnjan, Croatia</p>
-            <p class="right">April, 2016</p>
+    </div>
+    <div class="container-fluid footer">
+        <div class="row">
+            <div class="col-xs-12" id="footer">
+                <p class="pull-left">Visnjan Observatory, Istarska 5, 52463 Visnjan, Croatia</p>
+                <p class="pull-right">April, 2016</p>
+            </div>
         </div>
     </div>
 </body>
