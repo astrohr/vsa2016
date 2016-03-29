@@ -1,138 +1,229 @@
-BODY {
-	BACKGROUND-COLOR: #ffffff; FONT: 70%/2em Verdana, sans-serif; HEIGHT: 100%
+body {
+    background-color: #ffffff;
+    font: 70%/2em verdana, sans-serif;
+    height: 100%;
 }
-DIV#wrapper {
-	POSITION: absolute;
-	PADDING-BOTTOM: 0px;
-	MIN-HEIGHT: 100%;
-	PADDING-LEFT: 0px;
-	WIDTH: 100%;
-	PADDING-RIGHT: 0px;
-	HEIGHT: 100%;
-	TOP: 0px;
-	PADDING-TOP: 0px;
-	LEFT: 0px
+div#wrapper {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    padding: 0;
+    left: 0;
 }
-HTML > BODY DIV#wrapper {
-	HEIGHT: 940px
+html > body div#wrapper {
+    height: 940px;
 }
-DIV#header {
-	BACKGROUND-COLOR: #000000; MARGIN: 0px; WIDTH: 100%; HEIGHT: 100px
+div#header {
+    background-color: #000000;
+    margin: 0;
+    width: 100%;
+    height: 100px;
 }
-DIV#nav {
-	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 240px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 50px
+div#nav {
+    width: 240px;
+    float: left;
+    padding: 50px 0 0;
 }
-DIV#main {
-	PADDING-BOTTOM: 50px; WIDTH: 70%; MARGIN-LEFT: 250px; MARGIN-RIGHT: 25px; PADDING-TOP: 100px
+div#main {
+    padding-bottom: 50px;
+    width: 70%;
+    margin-left: 250px;
+    margin-right: 25px;
+    padding-top: 100px;
 }
-DIV#footer {
-	POSITION: absolute;
-	PADDING-BOTTOM: 0px;
-	BACKGROUND-COLOR: #000000;
-	MARGIN: 0px;
-	PADDING-LEFT: 0px;
-	WIDTH: 100%;
-	BOTTOM: 0px;
-	PADDING-RIGHT: 0px;
-	HEIGHT: 70px;
-	COLOR: #cccccc;
-	PADDING-TOP: 0px;
-	left: 0px;
-	overflow: auto;
+div#footer {
+    position: absolute;
+    background-color: #000000;
+    margin: 0;
+    width: 100%;
+    bottom: 0;
+    height: 70px;
+    color: #cccccc;
+    padding: 0;
+    left: 0;
+    overflow: auto;
 }
-DIV#header IMG.slika {
-	POSITION: absolute; TOP: 0px; LEFT: 0px
+div#header img.slika {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-DIV#header IMG.tekst {
-	POSITION: relative; RIGHT: -240px
+div#header img.tekst {
+    position: relative;
+    right: -240px;
 }
-DIV#wrp {
-	POSITION: absolute; TOP: 11px; RIGHT: 30%
+div#wrp {
+    position: absolute;
+    top: 11px;
+    right: 30%;
 }
 #naslov {
-	POSITION: absolute; HEIGHT: 40px; TOP: 150px; LEFT: 325px
+    position: absolute;
+    height: 40px;
+    top: 150px;
+    left: 325px;
 }
-DIV#main P {
-	TEXT-ALIGN: justify; COLOR: #000000
+div#main p {
+    text-align: justify;
+    color: #000000;
 }
-P.right {
-	PADDING-RIGHT: 5em; FLOAT: right
+p.right {
+    padding-right: 5em;
+    float: right;
 }
-P.left {
-	PADDING-LEFT: 5em; FLOAT: left
+p.left {
+    padding-left: 5em;
+    float: left;
 }
-DIV#navig {
-	FLOAT: left; MARGIN-LEFT: 50px
+div#navig {
+    float: left;
+    margin-left: 50px;
 }
-UL#nav {
-	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 140px; PADDING-RIGHT: 0px; BACKGROUND: #000000; LIST-STYLE-IMAGE: none; PADDING-TOP: 0px
+ul#nav {
+    margin: 0;
+    width: 140px;
+    background: #000000;
+    list-style: none none;
+    padding: 0;
 }
-UL#nav LI {
-	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+ul#nav li {
+    margin: 0;
+    padding: 0;
 }
-UL#nav A {
-	BORDER-BOTTOM: #ffffff 1px solid; PADDING-BOTTOM: 0px; LINE-HEIGHT: 2.5; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; DISPLAY: block; COLOR: #cccccc; TEXT-DECORATION: none; PADDING-TOP: 0px
+ul#nav a {
+    border-bottom: #ffffff 1px solid;
+    line-height: 2.5;
+    display: block;
+    color: #cccccc;
+    text-decoration: none;
+    padding: 0 15px;
 }
-UL#nav #nav_con A {
-	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+ul#nav #nav_con a {
+    border: medium none;
 }
-UL#nav A:hover {
-	BACKGROUND-COLOR: #cccccc; COLOR: #000000
+ul#nav a:hover {
+    background-color: #cccccc;
+    color: #000000;
 }
 .captioned_photo {
-	POSITION: relative; PADDING-BOTTOM: 0px; LINE-HEIGHT: 1em; MARGIN: 0.5em 0px 0.75em 1.25em; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: right; PADDING-TOP: 0px
+    position: relative;
+    line-height: 1em;
+    margin: 0.5em 0 0.75em 1.25em;
+    float: right;
+    padding: 0;
 }
-.captioned_photo P {
-	POSITION: absolute; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #111; MARGIN: 0px 0px 0px 2.5em; PADDING-LEFT: 0px; WIDTH: 200px; BOTTOM: -20px; PADDING-RIGHT: 0px; DISPLAY: block; FONT: 0.9em/1.25em Verdana, sans-serif; COLOR: #ffffff; PADDING-TOP: 0px; LEFT: 0px
+.captioned_photo p {
+    position: absolute;
+    background-color: #111;
+    margin: 0 0 0 2.5em;
+    width: 200px;
+    bottom: -20px;
+    display: block;
+    font: 0.9em/1.25em verdana, sans-serif;
+    color: #ffffff;
+    padding: 0;
+    left: 0;
 }
-.captioned_photo SPAN {
-	PADDING-BOTTOM: 0.75em; PADDING-LEFT: 0.75em; PADDING-RIGHT: 0.75em; DISPLAY: block; COLOR: #ffffff; PADDING-TOP: 0.75em
+.captioned_photo span {
+    display: block;
+    color: #ffffff;
+    padding: 0.75em;
 }
-.captioned_photo IMG {
-	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: block; PADDING-TOP: 0px
+.captioned_photo img {
+    margin: 0;
+    display: block;
+    padding: 0;
 }
-.captioned_photo A {
-	COLOR: #000000
+.captioned_photo a {
+    color: #000000;
 }
 .photo {
-	POSITION: relative; PADDING-BOTTOM: 0px; LINE-HEIGHT: 1em; MARGIN: 0.5em 0px 1.5em 1.25em; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: right; PADDING-TOP: 0px
+    position: relative;
+    line-height: 1em;
+    margin: 0.5em 0 1.5em 1.25em;
+    float: right;
+    padding: 0;
 }
-.photo IMG {
-	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 400px; PADDING-RIGHT: 0px; DISPLAY: block; PADDING-TOP: 0px
+.photo img {
+    margin: 0;
+    width: 400px;
+    display: block;
+    padding: 0;
 }
-.photo P {
-	POSITION: absolute; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #111; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 400px; BOTTOM: -30px; PADDING-RIGHT: 0px; DISPLAY: block; FONT: 0.9em/1.25em Verdana, sans-serif; COLOR: #ffffff; PADDING-TOP: 0px; LEFT: 0px
+.photo p {
+    position: absolute;
+    background-color: #111;
+    margin: 0;
+    width: 400px;
+    bottom: -30px;
+    display: block;
+    font: 0.9em/1.25em verdana, sans-serif;
+    color: #ffffff;
+    padding: 0;
+    left: 0;
 }
-.photo SPAN {
-	PADDING-BOTTOM: 0.75em; PADDING-LEFT: 0.75em; PADDING-RIGHT: 0.75em; DISPLAY: block; COLOR: #ffffff; PADDING-TOP: 0.75em
+.photo span {
+    display: block;
+    color: #ffffff;
+    padding: 0.75em;
 }
-#preVSA {
-	POSITION: relative; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 404px; PADDING-RIGHT: 0px; LIST-STYLE-IMAGE: none; PADDING-TOP: 0px; LEFT: 110px
+#prevsa {
+    position: relative;
+    margin: 0;
+    width: 404px;
+    list-style: none none;
+    padding: 0;
+    left: 110px;
 }
-#preVSA LI {
-	BORDER-BOTTOM: rgb(255,255,255) 1px solid; POSITION: relative; TEXT-ALIGN: center; BORDER-LEFT: rgb(255,255,255) 1px solid; PADDING-BOTTOM: 0px; BACKGROUND-COLOR: #dcdad5; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 200px; PADDING-RIGHT: 0px; DISPLAY: block; FLOAT: left; HEIGHT: 30px; BORDER-TOP: rgb(255,255,255) 1px solid; BORDER-RIGHT: rgb(255,255,255) 1px solid; PADDING-TOP: 0px
+#prevsa li {
+    position: relative;
+    text-align: center;
+    background-color: #dcdad5;
+    margin: 0;
+    width: 200px;
+    display: block;
+    float: left;
+    height: 30px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 0;
 }
-#preVSA LI.alt {
-	BACKGROUND-COLOR: #f2efe9
+#prevsa li.alt {
+    background-color: #f2efe9;
 }
-#body_prog #nav_prog A {
-	BACKGROUND: #666666; COLOR: #000000; FONT-WEIGHT: bold
+#body_prog #nav_prog a {
+    background: #666666;
+    color: #000000;
+    font-weight: bold;
 }
-#body_proj #nav_proj A {
-	BACKGROUND: #666666; COLOR: #000000; FONT-WEIGHT: bold
+#body_proj #nav_proj a {
+    background: #666666;
+    color: #000000;
+    font-weight: bold;
 }
-#body_lec #nav_lec A {
-	BACKGROUND: #666666; COLOR: #000000; FONT-WEIGHT: bold
+#body_lec #nav_lec a {
+    background: #666666;
+    color: #000000;
+    font-weight: bold;
 }
-#body_app #nav_app A {
-	BACKGROUND: #666666; COLOR: #000000; FONT-WEIGHT: bold
+#body_app #nav_app a {
+    background: #666666;
+    color: #000000;
+    font-weight: bold;
 }
-#body_spo #nav_spo A {
-	BACKGROUND: #666666; COLOR: #000000; FONT-WEIGHT: bold
+#body_spo #nav_spo a {
+    background: #666666;
+    color: #000000;
+    font-weight: bold;
 }
-#body_con #nav_con A {
-	BACKGROUND: #666666; COLOR: #000000; FONT-WEIGHT: bold
+#body_con #nav_con a {
+    background: #666666;
+    color: #000000;
+    font-weight: bold;
 }
-#body_pre #nav_pre A {
-	BACKGROUND: #666666; COLOR: #000000; FONT-WEIGHT: bold
+#body_pre #nav_pre a {
+    background: #666666;
+    color: #000000;
+    font-weight: bold;
 }

@@ -1,65 +1,98 @@
-BODY {
-	BACKGROUND-COLOR: #ffffff; FONT: 70%/2em Verdana, sans-serif
+body {
+	background-color: #ffffff;
+	font: 70%/2em verdana, sans-serif;
 }
-P.right {
-	PADDING-RIGHT: 5em; FLOAT: right
+p.right {
+	padding-right: 5em;
+	float: right;
 }
-P.left {
-	PADDING-LEFT: 5em; FLOAT: left
+p.left {
+	padding-left: 5em;
+	float: left;
 }
 #header {
-	POSITION: absolute;
-	BACKGROUND-COLOR: #ffffff;
-	WIDTH: 100%;
-	HEIGHT: 100px;
-	left: 0px;
-	top: 0px;
+	position: absolute;
+	background-color: #ffffff;
+	width: 100%;
+	height: 100px;
+	left: 0;
+	top: 0;
 }
-#header IMG {
-	POSITION: absolute; TOP: 11px; RIGHT: 5%
+#header img {
+	position: absolute;
+	top: 11px;
+	right: 5%;
 }
 #footer {
-	POSITION: absolute;
-	BACKGROUND-COLOR: #ffffff;
-	WIDTH: 100%;
-	BOTTOM: 0px;
-	HEIGHT: 61px;
-	left: 0px;
+	position: absolute;
+	background-color: #ffffff;
+	width: 100%;
+	bottom: 0;
+	height: 61px;
+	left: 0;
 }
 #main {
-	POSITION: absolute;
-	WIDTH: 100%;
-	HEIGHT: 100%;
-	TOP: 0px;
-	LEFT: 0px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
 	background-color: #000000;
 }
 #naslov {
-	POSITION: absolute;
-	WIDTH: 780px;
-	BACKGROUND: url(img/vsa_long.png) no-repeat;
-	HEIGHT: 40px;
-	TOP: 138px;
-	RIGHT: 47px
+	position: absolute;
+	font-family: "nasamedium", Arial, sans-serif;
+	top: 138px;
+	right: 5%;
+	left: 2%;
+	font-size: 58px;
+	text-shadow: 0 0 6px #FFF;
+	line-height: 58px;
+	text-align: right;
+	font-weight: normal;
 }
 #intro {
-	POSITION: relative; WIDTH: 33%; FLOAT: right; TOP: 200px; MARGIN-RIGHT: 5%
+	position: relative;
+	width: 33%;
+	float: right;
+	top: 200px;
+	margin-right: 5%;
 }
-#intro P {
-	TEXT-ALIGN: justify; COLOR: #cccccc
+#intro p {
+	text-align: justify;
+	color: #cccccc;
 }
 #buttons {
-	POSITION: relative; WIDTH: 550px; HEIGHT: 250px; MARGIN-LEFT: 2em; TOP: 250px; LEFT: 0px
+	position: relative;
+	width: 550px;
+	height: 250px;
+	margin-left: 2em;
+	top: 250px;
+	left: 0;
 }
-#buttons UL {
-	LIST-STYLE-POSITION: inside; Z-INDEX: 4; POSITION: relative; LIST-STYLE-TYPE: none; MARGIN: 0px; WIDTH: 550px
+#buttons ul {
+	z-index: 4;
+	position: relative;
+	list-style: none inside;
+	margin: 0;
+	width: 550px;
 }
-#buttons UL LI {
-	MARGIN: 0px 10px 10px 0px; WIDTH: 110px; FLOAT: left; HEIGHT: 110px
+#buttons ul li {
+	margin: 0 10px 10px 0;
+	width: 110px;
+	float: left;
+	height: 110px;
 }
-#buttons UL LI A {
-	TEXT-ALIGN: center; MARGIN: 10px 0px 0px 10px; WIDTH: 100px; FLOAT: left; HEIGHT: 100px; COLOR: #b5cce8; TEXT-DECORATION: none
+#buttons ul li a {
+    line-height: 1.2em;
+	text-align: center;
+	margin: 10px 0 0 10px;
+	width: 100px;
+	float: left;
+	height: 100px;
+	color: #b5cce8;
+	text-decoration: none;
 }
-#buttons UL LI A IMG {
-	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-TOP: 0px; BORDER-RIGHT: 0px
+#buttons ul li a img {
+	border-width: 0;
 }
