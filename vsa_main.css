@@ -133,7 +133,6 @@ ul.nav li:hover a {
     }
     .menu ul.nav li {
         flex-grow: 1;
-        flex-basis: 20%;
         min-width: 130px;
         background: #000;
         margin-right: 2px;
